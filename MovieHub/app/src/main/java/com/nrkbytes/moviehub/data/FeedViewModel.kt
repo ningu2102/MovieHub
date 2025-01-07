@@ -68,7 +68,7 @@ class FeedViewModel @Inject constructor() : ViewModel() {
         }
         if (netflixTvShows != null) {
             results.add(FeedItem.HorizontalList(
-                "Only on Netflix",
+                "Only on Movify",
                 netflixTvShows.map { it.toMediaTvShow() },
                 true
             ))

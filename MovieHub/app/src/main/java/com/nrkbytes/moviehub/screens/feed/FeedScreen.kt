@@ -133,11 +133,11 @@ fun FeedScreen(feedViewModel: FeedViewModel = viewModel()) {
                     title = {},
                     navigationIcon = {
                         Image(
-                            painter = painterResource(R.drawable.ic_netflix_short_logo),
+                            painter = painterResource(R.drawable.moviefy_logo),
                             "",
                             modifier = Modifier
-                                .width(32.dp)
-                                .height(32.dp)
+                                .width(48.dp)
+                                .height(48.dp)
                         )
                     },
                     actions = {
@@ -159,12 +159,12 @@ fun FeedScreen(feedViewModel: FeedViewModel = viewModel()) {
 
                 Row(Modifier
                     .fillMaxWidth()
-                    .padding(top = 96.0.dp)
+                    .padding(top = 60.0.dp, start = 60.dp)
                     .height(((1 - scrollBehavior.state.collapsedFraction) * 48).dp)
                 ) {
                     TABS.forEach {
                         Box(Modifier
-                            .weight(1f)
+//                            .weight(1f)
                             .fillMaxHeight()
                             .clickable(
                                 interactionSource = MutableInteractionSource(),
@@ -174,7 +174,7 @@ fun FeedScreen(feedViewModel: FeedViewModel = viewModel()) {
                             contentAlignment = Alignment.Center
                         ) {
                             Text(text = it,
-                                modifier = Modifier,
+                                modifier = Modifier.padding(end = 20.dp),
                                 color = colorResource(R.color.text_primary),
                                 fontSize = 16.sp,
                                 fontWeight = FontWeight.Medium

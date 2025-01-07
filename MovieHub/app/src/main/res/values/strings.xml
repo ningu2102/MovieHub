@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MovieHub</string>
+    <string name="app_name">Moviefy</string>
     <string name="home_tab_label">Home</string>
     <string name="coming_soon_tab_label">Coming Soon</string>
     <string name="downloads_tab_label">Downloads</string>

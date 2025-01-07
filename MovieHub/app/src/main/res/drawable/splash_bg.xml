@@ -5,5 +5,5 @@
     <item android:drawable="@android:color/black" />
     <item
         android:gravity="center"
-        android:drawable="@drawable/ic_netflix_logo" />
+        android:drawable="@drawable/moviefy_logo" />
 </layer-list>

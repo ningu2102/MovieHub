@@ -44,7 +44,7 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginStart="-8dp"
-                android:src="@drawable/ic_netflix_short_logo" />
+                android:src="@drawable/moviefy_logo" />
 
             <Space
                 android:layout_width="0dp"

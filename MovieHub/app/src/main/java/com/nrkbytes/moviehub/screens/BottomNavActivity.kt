@@ -31,7 +31,7 @@ class BottomNavActivity : BaseActivity() {
 
     private fun setupUI() {
         fragmentManager.beginTransaction().apply {
-            add(R.id.container, downloadsFragment, "downloads").hide(downloadsFragment)
+//            add(R.id.container, downloadsFragment, "downloads").hide(downloadsFragment)
             add(R.id.container, comingSoonFragment, "coming_soon").hide(comingSoonFragment)
             add(R.id.container, feedFragment, "home")
         }.commit()
@@ -56,17 +56,17 @@ class BottomNavActivity : BaseActivity() {
 
                     true
                 }
-                R.id.downloads -> {
-                    if (!fragmentFirstDisplay[2]) {
-                        fragmentFirstDisplay[2] = true
-                        downloadsFragment.onFirstDisplay()
-                    }
-                    fragmentManager.beginTransaction().hide(activeFragment)
-                        .show(downloadsFragment).commit()
-                    activeFragment = downloadsFragment
-
-                    true
-                }
+//                R.id.downloads -> {
+//                    if (!fragmentFirstDisplay[2]) {
+//                        fragmentFirstDisplay[2] = true
+//                        downloadsFragment.onFirstDisplay()
+//                    }
+//                    fragmentManager.beginTransaction().hide(activeFragment)
+//                        .show(downloadsFragment).commit()
+//                    activeFragment = downloadsFragment
+//
+//                    true
+//                }
                 else -> false
             }
         }
